@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/announcement.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="path/to/fontawesome.min.css" />
+  <title>Announcement</title>
+</head>
+
+<body>
+  <nav id="navi" class="nav">
+    <div class="nav-left">
+      <img src="image/logo.jpg" class="logo" />
+      <ul class="list">
+        <li>
+          <a href="home.html"><i class="fa-solid fa-house-chimney"></i>
+            <div>Home</div>
+          </a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-scroll"></i>
+            <div>Announcement</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-file-pen"></i>
+            <div>Notes</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right"></div>
+    <div class="search-box">
+      <i class="fa fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="profile online" onclick="settingsMenuToggle()">
+      <a herf="profile.html"><img src="./image/facebook.jpg" /></a>
+    </div>
+    <div class="profile-setting">
+      <div class="profile-setting_inner">
+        <div class="user_profile">
+          <img src="./image/facebook.jpg" class="logo_size">
+          <div>
+            <p>Name of the Student</p>
+            <a href="">See your profile</a>
+          </div>
+          <div id="dark_btn">
+            <label><input type="checkbox"><span class="check"></span></label>
+          </div>
+        </div>
+        <hr>
+        <div class="user_profile">
+          <img src="./image/feedback.png" class="logo_size">
+          <div>
+            <p>FEEDBACK</p>
+            <a href="">Give us Feedback</a>
+          </div>
+        </div>
+        <hr>
+        <div class="setting_links">
+          <img src="image/moon.png" class="settings_icon">
+          <a href="">Display Settings <i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <!------------------------------- Left container ---------------------------------->
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href="#"><i class="fa fa-user-group"></i> Friends</a>
+        <a href="#"><i class="fa fa-users-line"></i> Chapters</a>
+        <a href="#"><i class="fa fa-gear"></i> Settings</a>
+        <!-- <a href="#"><i class="fa fa-user-group"></i> </a> -->
+        <a href="#"><i class="fa-solid fa-chevron-down"></i>See more</a>
+      </div>
+      <div class="chapters-links">
+        <p>Student Chapters</p>
+        <a href="#"><img src="image/" />CSI Student Chapter</a>
+        <a href="#"><img src="image/" />CSA Student Chapter</a>
+        <a href="#"><img src="image/" />Smart Analyzer Student Chapter</a>
+        <a href="#"><img src="image/" />ACM Chapter</a>
+        <a href="#"><i class="fa-solid fa-chevron-down"></i>See more</a>
+      </div>
+    </div>
+    <!------------------------------- Main content ------------------------------------>
+    <div class="main-container">
+      <div class="post">
+        <div class="user_profile">
+          <img src="./image/facebook.jpg" />
+          <div>
+            <p>Name of the chapter</p>
+            <small>public <i class="fas fa-sort-down" id="down"></i></small>
+          </div>
+        </div>
+        <div class="post-input">
+          <textarea rows="2" placeholder="Share the event with us ... "></textarea>
+          <div class="post-input-links">
+            <a href="#"><img src="./image/video.png"> Live Video</a>
+            <a href="#"><img src="./image/image-gallery.png"> Photo</a>
+            <a href="#"><img src="./image/happy-face.png"> Feeling/Activity</a>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="user_profile">
+          <img src="./image/facebook.jpg" />
+          <div>
+            <p>Name of the chapter</p>
+            <span>DD/MM/YY ----TIME----</span>
+          </div>
+        </div>
+        <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias non culpa quos eum ab
+          maxime inventore dolores vel, debitis beatae assumenda sequi modi facere corporis dolorum nostrum. Vero,
+          minima hic.<a href="#"> When we use # its color while change</a> <span> .When we use @ then the it while be
+            bold</span></p>
+        <img src="image/college.jpg" class="post-image">
+        <div class="post-row">
+          <div><i class="fa-solid fa-thumbs-up"></i> Like</div>
+          <div><i class="fa-solid fa-registered"></i> Enroll</div>
+          <div><i class="fa-solid fa-share"></i> Share</div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="user_profile">
+          <img src="./image/facebook.jpg" />
+          <div>
+            <p>Name of the chapter</p>
+            <span>DD/MM/YY ----TIME----</span>
+          </div>
+        </div>
+        <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias non culpa quos eum ab
+          maxime inventore dolores vel, debitis beatae assumenda sequi modi facere corporis dolorum nostrum. Vero,
+          minima hic.<a href="#"> When we use # its color while change</a> <span> .When we use @ then the it while be
+            bold</span></p>
+        <img src="image/college.jpg" class="post-image">
+        <div class="post-row">
+          <div><i class="fa-solid fa-thumbs-up"></i> Like</div>
+          <div><i class="fa-solid fa-registered"></i> Enroll</div>
+          <div><i class="fa-solid fa-share"></i> Share</div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="user_profile">
+          <img src="./image/facebook.jpg" />
+          <div>
+            <p>Name of the chapter</p>
+            <span>DD/MM/YY ----TIME----</span>
+          </div>
+        </div>
+        <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias non culpa quos eum ab
+          maxime inventore dolores vel, debitis beatae assumenda sequi modi facere corporis dolorum nostrum. Vero,
+          minima hic.<a href="#"> When we use # its color while change</a> <span> .When we use @ then the it while be
+            bold</span></p>
+        <img src="image/college.jpg" class="post-image">
+        <div class="post-row">
+          <div><i class="fa-solid fa-thumbs-up"></i> Like</div>
+          <div><i class="fa-solid fa-registered"></i> Enroll</div>
+          <div><i class="fa-solid fa-share"></i> Share</div>
+        </div>
+      </div>
+
+    </div>
+    <!------------------------------- Right container --------------------------------->
+    <div class="right-sidebar">
+      <div class="notify">
+        <h4>Notification</h4>
+        <a href="#"> See all</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/9f612fa2e4.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="js/announcement.js"></script>
+</body>
+
+</html>
